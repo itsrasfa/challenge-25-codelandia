@@ -68,6 +68,7 @@
       color: $white;
       @include font-texto;
       transition: all .5s;
+      border: 2px solid transparent;
 
       &:hover {
         color: $black;
@@ -84,6 +85,7 @@
       &:last-child {
         margin-left: rem(20);
         padding: 0;
+        border: none;
         background-color: transparent;
         border-bottom: 2px solid $black;
         color: $black;
