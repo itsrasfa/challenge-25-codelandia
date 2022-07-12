@@ -1,0 +1,44 @@
+/* Cores */
+
+$white: #fff;
+$white-200: #F9F9F9;
+$black: #272727;
+$gray: #797979;
+
+
+/* Funções e Mixins */
+
+@function rem($pixels, $contexto: 16) {
+  @return ($pixels / $contexto) * 1rem;
+}
+
+@mixin font-texto {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: rem(18);
+  line-height: rem(29);
+}
+
+@mixin container-size {
+  width: 100%;
+  max-width: rem(1250);
+  margin: 0 auto;
+}
+
+@mixin mobile {
+  @media (max-width:500px) {
+    @content;
+  }
+}
+
+@mixin medium {
+  @media (max-width:1000px) {
+    @content;
+  }
+}
+
+@mixin medium-2 {
+  @media (max-width:740px) {
+    @content;
+  }
+}

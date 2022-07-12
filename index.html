@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HOMEYOU</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="shortcut icon" href="./assets/imgs/home.svg" type="image/x-icon">
+</head>
+
+<body>
+  <header>
+    <div class="nav_container">
+      <a class="logo" href="#"><img src="./assets/imgs/home.svg" alt="Logo">HomeYou</a>
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <nav class="nav">
+        <ul class="nav_links">
+          <a class="link" href="#">
+            <li>Inicio</li>
+          </a>
+          <a class="link" href="#galeria">
+            <li>Galeria</li>
+          </a>
+          <a class="link" href="#contato">
+            <li>Contato</li>
+          </a>
+        </ul>
+        <div class="nav_icons">
+          <img src="./assets/imgs/user.svg" alt="User">
+          <img src="./assets/imgs/heart.svg" alt="Likes">
+          <img src="./assets/imgs/search.svg" alt="Search">
+        </div>
+      </nav>
+    </div>
+  </header>
+  <main class="container">
+    <section class="principal">
+      <div class="principal_texto">
+        <h1>Ajudar você a encontrar o melhor conforto, é nossa prioridade.</h1>
+        <p>Encontre uma variedade de propriedades que combinam com você. Esqueça todas as dificuldades em encontrar uma residência.</p>
+        <div class="principal_texto--links">
+          <a href="#contato">Entre em contato</a>
+          <a href="#design">Saiba mais</a>
+        </div>
+      </div>
+      <img src="./assets/imgs/img1.png" alt="Casa Minimalista">
+    </section>
+    <section id="design" class="design_container">
+      <div class="design">
+        <img src="./assets/imgs/img2.png" alt="Sala de estar" data-anime="left">
+        <div data-anime="right" class="design_texto">
+          <div class="design_texto--background">
+            <h2>Design Minimalista</h2>
+            <p>Móveis apenas essenciais e com design moderno, além de revestimentos bonitos e em cores neutras para manter a casa sempre com um estilo clean e suave.</p>
+          </div>
+          <a href="#galeria">Quero saber mais sobre os designs</a>
+        </div>
+      </div>
+    </section>
+    <section id="galeria" class="galeria">
+      <h2>Galeria</h2>
+      <p>Se você está entediado com a aparência da decoração de interiores das casas comuns, trabalhamos com designs diferentes e inovadores.</p>
+      <div class="galeria_imagens">
+        <picture data-anime="bottom">
+          <source srcset="./assets/imgs/img-responsive-1.png" media="(max-width: 400px)">
+          <source srcset="./assets/imgs/img3.png">
+          <img srcset="./assets/imgs/img3.png">
+        </picture>
+        <picture data-anime="top">
+          <source srcset="./assets/imgs/img-responsive-2.png" media="(max-width: 400px)">
+          <source srcset="./assets/imgs/img4.png">
+          <img srcset="./assets/imgs/img4.png">
+        </picture>
+        <picture data-anime="bottom">
+          <source srcset="./assets/imgs/img-responsive-3.png" media="(max-width: 400px)">
+          <source srcset="./assets/imgs/img5.png">
+          <img srcset="./assets/imgs/img5.png">
+        </picture>
+      </div>
+    </section>
+    <section id="contato" class="orcamento_container">
+      <div class="orcamento">
+        <h2>Orçamento</h2>
+        <p>Interessado em entrar em contato com um de nossos profissionais?</p>
+        <a data-anime="bottom" href="https://www.linkedin.com/in/itsrafa/" target="_blank">Entre em contato</a>
+      </div>
+    </section>
+  </main>
+  <footer class="rodape">
+    <img src="./assets/imgs/home.svg" alt="">
+    <div class="rodape_produtos">
+      <h3>Produtos</h3>
+      <a href="">Mobilia</a>
+      <a href="">Segurança</a>
+      <a href="">Design Interior</a>
+    </div>
+    <div class="rodape_info">
+      <h3>Mais Informações</h3>
+      <a href="">Contrato</a>
+      <a href="">Sobre nós</a>
+      <a href="">Termos e Condições</a>
+    </div>
+    <div class="rodape_redes">
+      <h3>Redes Sociais</h3>
+      <a href="">Pinterest</a>
+      <a href="">Facebook</a>
+      <a href="">Instagram</a>
+    </div>
+  </footer>
+  <div class="back-to-top">
+    <img src="./assets/imgs/arrow.svg"></a>
+  </div>
+  <script src="./assets/js/script.js"></script>
+</body>
+
+</html>

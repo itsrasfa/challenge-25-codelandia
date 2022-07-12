@@ -1,0 +1,43 @@
+.galeria {
+  @include container-size;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: rem(20);
+  padding: rem(55) rem(20);
+
+  h2 {
+    font: 600 rem(32) 'Montserrat', sans-serif;
+
+    @include mobile {
+      font-size: rem(24);
+    }
+  }
+
+  p {
+    text-align: center;
+    max-width: 65ch;
+    color: $gray;
+    @include font-texto;
+
+    @include mobile {
+      font-size: rem(14);
+      line-height: rem(20);
+    }
+  }
+}
+
+.galeria_imagens {
+  display: flex;
+  justify-content: center;
+  gap: rem(20);
+  flex-wrap: wrap;
+
+  img {
+    max-width: 300px;
+  }
+
+  @include mobile {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,104 @@
+.principal {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: rem(20);
+  @include container-size;
+
+  @include mobile {
+    justify-content: center;
+  }
+
+  img {
+    max-width: 560px;
+
+    @include medium {
+      max-width: 300px;
+    }
+
+    @include medium-2 {
+      display: none;
+    }
+  }
+
+  .principal_texto {
+    padding-left: rem(20);
+
+    @include medium {
+      padding: rem(40) rem(20);
+    }
+
+    @include mobile {
+      padding: rem(40) rem(20);
+    }
+
+    h1 {
+      font: 600 rem(40) 'Montserrat', sans-serif;
+      margin-bottom: rem(16);
+
+      @include medium {
+        font-size: rem(34);
+      }
+
+      @include mobile {
+        font-size: rem(26);
+      }
+    }
+
+    p {
+      @include font-texto;
+      color: $gray;
+      margin-bottom: rem(32);
+      max-width: 42ch;
+
+      @include mobile {
+        font-size: rem(14);
+        font-weight: 400;
+        line-height: rem(23);
+      }
+
+      @include medium {
+        font-size: rem(16);
+      }
+    }
+
+    a {
+      padding: rem(12) rem(30);
+      background-color: $black;
+      color: $white;
+      @include font-texto;
+      transition: all .5s;
+
+      &:hover {
+        color: $black;
+        background-color: $white;
+        border: 2px solid $black;
+      }
+
+
+      @include mobile {
+        padding: rem(12) rem(20);
+        font-size: rem(14);
+      }
+
+      &:last-child {
+        margin-left: rem(20);
+        padding: 0;
+        background-color: transparent;
+        border-bottom: 2px solid $black;
+        color: $black;
+        transition: all .5s;
+
+        &:hover {
+          border: none;
+          color: $gray;
+          border-bottom: 2px solid $gray;
+        }
+
+        @include mobile {
+          margin-left: rem(15);
+        }
+      }
+    }
+  }
+}

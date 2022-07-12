@@ -1,0 +1,59 @@
+.rodape {
+  @include container-size;
+  padding: rem(90) rem(30);
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: rem(30);
+  flex-wrap: wrap;
+
+  @include mobile {
+    flex-direction: column;
+  }
+}
+
+.rodape_produtos,
+.rodape_info,
+.rodape_redes {
+  display: flex;
+  flex-direction: column;
+  gap: rem(16);
+
+  h2 {
+    font: 600 rem(18) 'Montserrat', sans-serif;
+    color: $black;
+
+    @include mobile {
+      font-size: rem(16);
+    }
+  }
+
+  a {
+    font: 400 rem(18) 'Montserrat', sans-serif;
+    color: $black;
+
+    @include mobile {
+      font-size: rem(14);
+    }
+
+    &:hover {
+      color: $gray;
+    }
+  }
+}
+
+.back-to-top {
+  display: none;
+  width: 35px;
+  height: 35px;
+  position: fixed;
+  bottom: 15px;
+  right: 30px;
+  transition: 0.3s;
+  z-index: 5;
+  cursor: pointer;
+
+  img {
+    max-width: 35px;
+  }
+}
